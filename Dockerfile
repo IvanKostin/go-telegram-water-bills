@@ -1,5 +1,6 @@
 FROM golang:1.16-alpine3.15
-ENV TELEGRAM_APITOKEN=""
+ARG token
+ENV TELEGRAM_APITOKEN=$token
 
 WORKDIR /app
 
